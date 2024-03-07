@@ -33,7 +33,6 @@ public class DataInitializer implements CommandLineRunner {
 
         Set<Role> admin_roles = new HashSet<>();
         admin_roles.add(adminrole);
-        //admin_roles.add(userrole);
 
         User admin = new User(1, "admin", "admin", "admin@gmail.com", 48, admin_roles);
         userDao.save(admin);
