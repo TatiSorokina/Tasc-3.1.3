@@ -27,7 +27,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional
-    public void addUser(User user) {
+    public void creatUser(User user) {
         userDao.save(user);
     }
 
@@ -77,3 +77,4 @@ public class UserServiceImpl implements UserService {
         return user.get();
     }
 }
+
